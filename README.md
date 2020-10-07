@@ -1,0 +1,1 @@
+# Minoration-de-valeur
