@@ -17,14 +17,14 @@ ce projet est de construction modulaire,
               ├───prepFrontEnd.py
 ```
 ## à quoi sert chaque module ?
-conf==> ce repertoire contient les fichiers de configurations necessaires pour le projet
-src ==> regroupe les differents scripts du projet.
-src/main ==>Le lancement du programme se fait apartir de cette classe qui fait appel aux fonctions implémentées dans les autres classes 
-src/dataPrep: ce script permet de réaliser la preparation des données et effectuer les calculs necessaire pour la detection d'anomalie au sens statistique 
-src/modelisation ==> ce sript a pour but de mettre en place un modele predictif qui permet de calculer la valeur statistique réelle ( celle qui aurait du étre declaré par l'operateur)
-src/statDesc ==> ce script permet de realiser des statistiques descriptives
-src/cartographie ==> permer d'avoir une cartograohie/listing des 
-src/prepFrontEnd
+* conf==> ce repertoire contient les fichiers de configurations necessaires pour le projet
+* src ==> regroupe les differents scripts du projet.
+* src/main ==>Le lancement du programme se fait apartir de cette classe qui fait appel aux fonctions implémentées dans les autres classes 
+* src/dataPrep: ce script permet de réaliser la preparation des données et effectuer les calculs necessaire pour la detection d'anomalie au sens statistique 
+* src/modelisation ==> ce sript a pour but de mettre en place un modele predictif qui permet de calculer la valeur statistique réelle ( celle qui aurait du étre declaré par l'operateur)
+* src/statDesc ==> ce script permet de realiser des statistiques descriptives
+* src/cartographie ==> permer d'avoir une cartograohie/listing des 
+* src/prepFrontEnd
 ## description des fonctions qui se trouvent dans chaque modules ?
 
 Afin de realiser la detection d'anomalie le projet  repose sur 2 aspects : statistique et predictif
