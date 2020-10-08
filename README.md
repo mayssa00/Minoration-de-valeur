@@ -47,7 +47,6 @@ ce projet est de construction modulaire,l'arboresence se présente comme ceci :
 * select_variables(): Permet de récuperer les données utiles pour la partie front end.
 
 > Modélisation
-les fichiers générés pendant la phase de préparation de données vont servir à la réalisation du modéle prédictif 
 * Extract_feature(table_name)
 cette fonction a pour but de définier les 3 niveaux de complexites des features (simple, intermediaire, complet)
 * train_model() :cette fonction permet l'execution itérative des niveaux de complexités sur chaque modéle.
