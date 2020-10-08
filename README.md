@@ -31,21 +31,21 @@ ce projet est de construction modulaire,
 > dataPrep
 * def_perimetre(table_name_intput)
 Cette fonction a pour vocation de definir le perimetre des données sur les quelles on va travailler en applicant certaines régles définies par les metiers.
-*extract_doublons(table_globale_genere)
+* extract_doublons(table_globale_genere)
 Permet d'eleminer les doublons qui peuvent exister dans la table
-*create_cd_pays(table_name, listpays)
+* create_cd_pays(table_name, listpays)
 Permet de rajouter l'information par rapport aux pays d'origine dans la table a partir d'un fichier csv stocké sur hdfs
-*create_lb_marchandise(table_name,listmarchandise)
+* create_lb_marchandise(table_name,listmarchandise)
 Permet de rajouter l'information par rapport au libellé  marchandise dans la table a partir d'un fichier csv stocké sur hdfs
-*create_variables()
+* create_variables()
 
-*calcul_ratio()
+* calcul_ratio()
 cette fonction permet de calculer les ratios pour en deduire le degré d'anomalie 
-*join_siren()
+* join_siren()
 permet de faire un rapprochement avec la table siren pour en récuprer certaines informations
-*extract_whitelist()
-*extract_error_MN()
-*select_variables()
+* extract_whitelist()
+* extract_error_MN()
+* select_variables()
 
 
 
