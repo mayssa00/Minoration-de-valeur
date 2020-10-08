@@ -9,12 +9,16 @@ ce projet est de construction modulaire,
 ├───Minoration_valeur
           ├───conf
           ├───src
-              ├───main.py
-              ├───dataPrep.py
-              ├───modelisation.py
-              ├───statDesc.py
-              ├───cartographie.py
-              ├───prepFrontEnd.py
+              ├───main
+                  ├───utils
+                      ├───dataPrep.py
+                  ├───main.py ( donner à la classe main le nom du projets)
+                  ├───modelisation.py
+                  ├───statDesc.py
+                  ├───cartographie.py
+                  ├───prepFrontEnd.py
+              ├───test
+           
 ```
 ## à quoi sert chaque module ?
 * conf==> ce repertoire contient les fichiers de configurations necessaires pour le projet
@@ -24,7 +28,7 @@ ce projet est de construction modulaire,
 * src/modelisation ==> ce sript a pour but de mettre en place un modele predictif qui permet de calculer la valeur statistique réelle ( celle qui aurait du étre declaré par l'operateur)
 * src/statDesc ==> ce script permet de realiser des statistiques descriptives
 * src/cartographie ==> permer d'avoir une cartographie/listing de certaines informations
-* src/prepFrontEnd ==> ce spript permet de preparer les données necessaires pour la partie front end
+* src/prepFrontEnd ==> ce script permet de préparer les données nécessaires pour la partie front end
 ## description des fonctions qui se trouvent dans chaque modules ?
  
  
@@ -40,12 +44,38 @@ Permet de rajouter l'information par rapport au libellé  marchandise dans la ta
 * create_variables()
 
 * calcul_ratio()
-cette fonction permet de calculer les ratios pour en deduire le degré d'anomalie 
+Cette fonction permet de calculer les ratios pour en deduire le degré d'anomalie 
 * join_siren()
-permet de faire un rapprochement avec la table siren pour en récuprer certaines informations
+Permet de faire un rapprochement avec la table siren pour en récuprer certaines informations
 * extract_whitelist()
+
 * extract_error_MN()
+
 * select_variables()
+Permet de récuperer les données utiles pour la partie front end.
+
+> statDescriptive
+
+
+> Modélisation
+les fichiers générés pendant la phase de préparation de données vont servir à la réalisation du modéle prédictif 
+* Extract_feature(table_name)
+cette fonction a pour but de définier les 3 niveaux de complexites des features (simple, intermediaire, complet)
+* train_model()
+* extract_performance_model()
+cette fonction permet l'execution itérative des niveaux de complexités sur chaque modele et choisir le modele le plus pertinent
+
+* predict_model()
+cette fonction permet de realiser la prédiction apartir d'un modéle
+
+* calcul_enjeu()
+cette fonction consiste à calculer les enjeu (montants de droits de douane et les taxes) suite au modéle prédictif
+
+* prep_restitution()
+permet la préparation des variables de restitution
+* extact_blacklist_Op()
+cette focntion permet l'extraction des opéateurs blacklistés.
+
 
 
 
